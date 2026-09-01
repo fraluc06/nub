@@ -75,9 +75,11 @@ npm install -g @nubjs/nub
 ```
 
 > [!NOTE]
-> If you previously installed `nub` via the custom tap, you need to uninstall that version and untap the repository before installing from Homebrew core:
+> Switching an existing `nubjs/tap` install over to the core formula takes an uninstall first:
 >
-> `brew uninstall nubjs/tap/nub && brew untap nubjs/tap && brew install nub`
+> ```sh
+> brew uninstall nubjs/tap/nub && brew untap nubjs/tap && brew install nub
+> ```
 
 For GitHub Actions, use [`nubjs/setup-nub`](https://github.com/nubjs/setup-nub) in place of `actions/setup-node`. It's one-to-one compatible.
 
